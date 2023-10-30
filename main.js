@@ -4,10 +4,11 @@ function getGrid (resolution = 16){
   for(i=1; i <= resolution*resolution; i++) {
     const div = document.createElement('div');
     div.setAttribute('class', '');
+    div.style.cssText = `width: ${(1/resolution) * 100}%; 
+                        height: ${(1/resolution) * 100}%;`
     mainContainer.appendChild(div);
   }
 }
-
 getGrid()
 
 const pixelDraw = document.querySelectorAll('.container > div');
@@ -39,5 +40,11 @@ document.getElementById('resolutionForm').addEventListener('submit', e => {
   let formDate = {
     resolution: resolution
   }
-  console.log(resolution)
+
+  newGrid(resolution)
+
 })
+
+function newGrid(resolution) {
+  remove
+}

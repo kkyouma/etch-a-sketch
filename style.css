@@ -24,14 +24,13 @@ body {
 
 .container {
   min-width: 400px;
+  max-width: 400px;
   display: flex;
   flex-wrap: wrap;
   aspect-ratio: 1/1;
 }
 
 .container > div {
-  width: 6.25%;
-  height: 6.25%;
   border: 1px solid #000;
   box-sizing: border-box;
   gap: 0; 
