@@ -7,19 +7,21 @@
   <title>Etch a sketch</title>
 </head>
 <body>
-  <button id="openPopup">SELECT NEW GRID</button>
-  <div class="container" id="mainContainer"></div>
-
-  <div class="modalContainer">
-    <div class="modal">
-      <h3>Select your resolution</h3>
-      <form id="getResolution">
-        <input type="number" class="input" id="user-resolution">
-      </form>
-      <button class="close" id="closePopup">Close</button>
+  <section class="main-content">
+    <div class="game">
+      <button id="openPopup">SELECT NEW GRID</button>
+      <div class="container" id="mainContainer"></div>
     </div>
-  </div>
-
-  <script src="main.js"></script>
+    <div class="modalContainer">
+      <div class="modal">
+        <h3>Select your resolution</h3>
+        <form id="getResolution">
+          <input type="number" class="numberInput" id="user-resolution">
+        </form>
+        <button class="close" id="closePopup">Close</button>
+      </div>
+    </div>
+  </section>
+    <script src="main.js"></script>
 </body>
 </html>

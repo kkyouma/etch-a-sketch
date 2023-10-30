@@ -20,6 +20,7 @@ const closePopup = document.getElementById('closePopup');
 
 openPopup.addEventListener('click', () => {
   popup.classList.add('show');
+
 }); 
 
 closePopup.addEventListener('click', () => {
