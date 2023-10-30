@@ -8,12 +8,16 @@ body {
   height: 100vh;
 }
 #mainContainer {
-
+  width: 800px;
+  height:800px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .element {
-  margin: 5px;
+  flex-basis: calc(6.25%);
+  height: 6.25%;
+  border: 1px solid #000;
   box-sizing: border-box;
+  gap: 0; 
 }
