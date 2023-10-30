@@ -39,7 +39,12 @@ document.getElementById('resolutionForm').addEventListener('submit', e => {
   let formDate = {
     resolution: resolution
   }
-  newGrid(resolution)
+  if (resolution > 100) {
+    alert("Only numbers under 100")
+  } else {
+    popup.classList.remove('show')
+    newGrid(resolution)
+  }
 });
 
 function newGrid(resolution) {
