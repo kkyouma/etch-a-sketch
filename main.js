@@ -14,8 +14,8 @@ pixelDraw.forEach(function(element){
 });
 
 
-const openPopup = document.getElementById('openPopup');
 const popup = document.querySelector('.modalContainer');
+const openPopup = document.getElementById('openPopup');
 const closePopup = document.getElementById('closePopup');
 
 openPopup.addEventListener('click', () => {
@@ -25,3 +25,4 @@ openPopup.addEventListener('click', () => {
 closePopup.addEventListener('click', () => {
   popup.classList.remove('show');
 }); 
+
