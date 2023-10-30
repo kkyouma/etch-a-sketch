@@ -9,14 +9,13 @@ for(i=1; i <= 16*16; i++) {
 const pixelDraw = document.querySelectorAll('.container > div');
 
 pixelDraw.forEach(function(element){
-  element.addEventListener('mouseover', function() {
-    element.classList.add('black');
-  });
+  element.addEventListener('mouseover', () => {element.classList.add('black')});
+  element.addEventListener('mouseout', () => {element.classList.remove('black');});
 });
 
-pixelDraw.forEach(function(element){
-  element.addEventListener('mouseout', function() {
-    element.classList.remove('black');
-  });
-});
 
+const openPopup = document.getElementById('newGrid');
+
+openPopup.onclick = () => {
+  window.open("popup.html")
+}
