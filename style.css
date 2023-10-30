@@ -38,7 +38,7 @@ body {
 }
 
 .container > .black {
-  background-color: #000;
+  background-color: #00000000;
 }
 
 button {
@@ -84,4 +84,9 @@ button {
 .show {
   opacity: 1;
   pointer-events: auto;
+}
+
+#mainContainer {
+  background-image: url(images/1625981896131.jpg);
+  background-position: -100px -400px;
 }

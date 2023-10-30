@@ -13,7 +13,7 @@ function getGrid (resolution = 16){
 
   pixelDraw.forEach(function(e){
     e.addEventListener('mouseover', () => {e.classList.add('black')});
-    e.addEventListener('mouseout', () => {e.classList.remove('black');});
+    //e.addEventListener('mouseout', () => {e.classList.remove('black');});
   });
 }
 getGrid()
