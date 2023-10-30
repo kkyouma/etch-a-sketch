@@ -3,7 +3,7 @@ const mainContainer = document.getElementById('mainContainer');
 function getGrid (resolution = 16){
   for(i=1; i <= resolution*resolution; i++) {
     const div = document.createElement('div');
-    div.setAttribute('class', '');
+    div.setAttribute('class', 'containerElement');
     div.style.cssText = `width: ${(1/resolution) * 100}%; 
                         height: ${(1/resolution) * 100}%;`
     mainContainer.appendChild(div);
@@ -15,7 +15,7 @@ const pixelDraw = document.querySelectorAll('.container > div');
 
 pixelDraw.forEach(function(element){
   element.addEventListener('mouseover', () => {element.classList.add('black')});
-  element.addEventListener('mouseout', () => {element.classList.remove('black');});
+//  element.addEventListener('mouseout', () => {element.classList.remove('black');});
 });
 
 
@@ -40,11 +40,15 @@ document.getElementById('resolutionForm').addEventListener('submit', e => {
   let formDate = {
     resolution: resolution
   }
-
   newGrid(resolution)
-
-})
+});
 
 function newGrid(resolution) {
-  remove
+  const containerElement = document.getElementsByClassName('containerElement')
+  const elementArray = Array.from(containerElement);
+
+  elementArray.forEach(e => {
+    e.parentNode.removeChild(e)
+  })
+  getGrid(resolution)
 }
