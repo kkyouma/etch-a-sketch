@@ -14,8 +14,14 @@ pixelDraw.forEach(function(element){
 });
 
 
-const openPopup = document.getElementById('newGrid');
+const openPopup = document.getElementById('openPopup');
+const popup = document.querySelector('.modalContainer');
+const closePopup = document.getElementById('closePopup');
 
-openPopup.onclick = () => {
-  window.open("popup.html")
-}
+openPopup.addEventListener('click', () => {
+  popup.classList.add('show');
+}); 
+
+closePopup.addEventListener('click', () => {
+  popup.classList.remove('show');
+}); 

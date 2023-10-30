@@ -34,3 +34,21 @@ body {
   margin-bottom: 10px;
   padding: 10px;
 }
+
+.modalContainer {
+  background-color: gray;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+h3 {
+  display: block;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
