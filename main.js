@@ -8,16 +8,15 @@ function getGrid (resolution = 16){
                         height: ${(1/resolution) * 100}%;`
     mainContainer.appendChild(div);
   }
+
+  const pixelDraw = document.querySelectorAll('.container > div');
+
+  pixelDraw.forEach(function(e){
+    e.addEventListener('mouseover', () => {e.classList.add('black')});
+    e.addEventListener('mouseout', () => {e.classList.remove('black');});
+  });
 }
 getGrid()
-
-const pixelDraw = document.querySelectorAll('.container > div');
-
-pixelDraw.forEach(function(element){
-  element.addEventListener('mouseover', () => {element.classList.add('black')});
-//  element.addEventListener('mouseout', () => {element.classList.remove('black');});
-});
-
 
 const popup = document.querySelector('.modalContainer');
 const openPopup = document.getElementById('openPopup');
