@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(47, 44, 44);
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+#mainContainer {
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element {
+  margin: 5px;
+  box-sizing: border-box;
+}
